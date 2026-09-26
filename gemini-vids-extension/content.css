@@ -1,0 +1,39 @@
+/* Fallback styles for the Vids button (used when no native reference button was found).
+   When a native button is cloned, these rules are mostly ignored because the
+   cloned classes already provide styling. */
+
+#gemini-vids-extension-button.vids-btn-fallback {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--gm3-sys-on-surface-variant, #444746);
+  font-family: "Google Sans Text", "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+#gemini-vids-extension-button.vids-btn-fallback:hover {
+  background: rgba(60, 64, 67, 0.08);
+}
+
+#gemini-vids-extension-button .vids-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+#gemini-vids-extension-button .vids-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
